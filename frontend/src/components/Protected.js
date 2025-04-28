@@ -9,7 +9,7 @@ function Protected({ token }) {
       setError('');
       setMessage('');
       try {
-        const response = await fetch('http://localhost:4000/protected', {
+        const response = await fetch('https://jwt-authentication-vly4.onrender.com/protected', {
           headers: {
             Authorization: 'Bearer ' + token,
           },

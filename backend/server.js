@@ -11,6 +11,10 @@ const SECRET_KEY = process.env.SECRET_KEY || 'your_secret_key_here';
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Backend is running' });
+});
+
 const users = [];
 
 // Register route of authentication
