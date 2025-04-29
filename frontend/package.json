@@ -9,8 +9,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postinstall": "npm rebuild"
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
