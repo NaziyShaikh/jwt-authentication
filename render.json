@@ -4,8 +4,8 @@
       "type": "web",
       "name": "jwt-auth-frontend",
       "env": "Node",
-      "buildCommand": "npm install && npm run build",
-      "startCommand": "cd frontend && npm run serve",
+      "buildCommand": "cd frontend && npm install && npm run build",
+      "startCommand": "cd frontend && npx serve -s build",
       "envVars": {
         "NODE_VERSION": "18.x"
       }
@@ -14,8 +14,8 @@
       "type": "web",
       "name": "jwt-auth-backend",
       "env": "Node",
-      "buildCommand": "npm install",
-      "startCommand": "node backend/server.js",
+      "buildCommand": "cd backend && npm install",
+      "startCommand": "cd backend && npm start",
       "envVars": {
         "NODE_VERSION": "18.x"
       }
